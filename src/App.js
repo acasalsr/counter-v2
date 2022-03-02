@@ -19,12 +19,17 @@ function App() {
 
     */
     <>
-      <div>{count}</div>
-      <button>+1</button>
-      <button>+5</button>
-      <button>-1</button>
-      <button>-5</button>
-      <button>Reset</button>
+      <div className="counter_container">
+        <div className="counter_display">{count}</div>
+        <div className="counter_wrapper-buttons">
+          <button className="counter_button">+1</button>
+          <button className="counter_button">+5</button>
+          <button className="counter_button">-1</button>
+          <button className="counter_button">-5</button>
+        </div>
+        <br />
+        <button className="counter_button-reset">Reset</button>
+      </div>
     </>
   );
 }
