@@ -11,3 +11,10 @@ export const decreaseCounter = (amount) => {
     payload: amount,
   };
 };
+
+export const reset = () => {
+  return {
+    type: "RESET",
+    payload: 0,
+  };
+};
